@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuídate PSM | Plan de Salud Menonita</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient {
+            background: linear-gradient(rgba(0, 48, 135, 0.8), rgba(0, 48, 135, 0.8)), url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .accent-color { color: #00a859; } /* Menonita Green */
+        .bg-menonita-blue { background-color: #003087; }
+        .bg-menonita-green { background-color: #00a859; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <img class="h-12 w-auto" src="https://planmenonita.org/wp-content/uploads/2022/12/Logo-PSM-2023-e1671225129217.png" alt="Plan de Salud Menonita Logo">
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-gray-600 hover:text-blue-800 font-medium">Inicio</a>
+                    <a href="#servicios" class="text-gray-600 hover:text-blue-800 font-medium">Servicios</a>
+                    <a href="#bienestar" class="text-gray-600 hover:text-blue-800 font-medium">Bienestar</a>
+                    <a href="#contacto" class="bg-menonita-green text-white px-6 py-2 rounded-full font-bold hover:bg-green-600 transition">Contactar</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 py-4 space-y-2">
+            <a href="#inicio" class="block text-gray-600 py-2">Inicio</a>
+            <a href="#servicios" class="block text-gray-600 py-2">Servicios</a>
+            <a href="#bienestar" class="block text-gray-600 py-2">Bienestar</a>
+            <a href="#contacto" class="block text-menonita-green font-bold py-2">Contactar</a>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero-gradient h-[600px] flex items-center text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Tu salud es nuestra <br><span class="text-green-400">prioridad absoluta.</span></h1>
+            <p class="text-xl mb-8 max-w-2xl text-gray-200">En Plan de Salud Menonita, nos comprometemos a brindarte el cuidado preventivo y la atención médica que mereces. Cuídate con nosotros.</p>
+            <div class="flex flex-col md:flex-row gap-4">
+                <a href="#" class="bg-menonita-green hover:bg-green-600 text-white px-8 py-4 rounded-lg font-bold text-center transition">Ver Planes Médicos</a>
+                <a href="#" class="bg-white hover:bg-gray-100 text-blue-900 px-8 py-4 rounded-lg font-bold text-center transition">Directorio Médico</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="servicios" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Servicios Diseñados para Ti</h2>
+                <div class="w-20 h-1 bg-menonita-green mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition transform hover:-translate-y-2">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-user-doctor text-2xl text-blue-800"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Atención Primaria</h3>
+                    <p class="text-gray-600">Acceso directo a los mejores especialistas y centros de cuidado primario en toda la isla.</p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition transform hover:-translate-y-2">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-pills text-2xl text-green-700"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Farmacia</h3>
+                    <p class="text-gray-600">Amplia red de farmacias y beneficios en medicamentos recetados para mantener tu bienestar.</p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition transform hover:-translate-y-2">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-mobile-screen-button text-2xl text-blue-800"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Telemedicina</h3>
+                    <p class="text-gray-600">Consulta con doctores desde la comodidad de tu hogar a través de nuestra plataforma digital.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bienestar" class="py-20 bg-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1505751172107-573225a94250?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Bienestar" class="rounded-3xl shadow-2xl">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold text-blue-900 mb-6">Programa Cuídate: Prevención Integral</h2>
+                <p class="text-lg text-gray-700 mb-6">Nuestro programa de bienestar está enfocado en identificar riesgos a tiempo y promover estilos de vida saludables para todos nuestros afiliados.</p>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-check-circle text-menonita-green text-xl"></i>
+                        <span class="font-medium text-gray-800">Charlas educativas mensuales</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-check-circle text-menonita-green text-xl"></i>
+                        <span class="font-medium text-gray-800">Clínicas de vacunación y cernimiento</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-check-circle text-menonita-green text-xl"></i>
+                        <span class="font-medium text-gray-800">Apoyo nutricional personalizado</span>
+                    </li>
+                </ul>
+                <button class="bg-blue-800 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-900 transition">Saber más sobre Cuídate</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto" class="bg-menonita-blue text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <img class="h-12 w-auto mb-6 brightness-0 invert" src="https://via.placeholder.com/200x80?text=PSM+Logo" alt="Logo">
+                    <p class="text-blue-100 text-sm">Sirviendo a Puerto Rico con excelencia médica y compromiso social.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Enlaces Rápidos</h4>
+                    <ul class="space-y-4 text-blue-100 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Directorio Médico</a></li>
+                        <li><a href="#" class="hover:text-white transition">Formularios de Farmacia</a></li>
+                        <li><a href="#" class="hover:text-white transition">Portal del Afiliado</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Contacto</h4>
+                    <ul class="space-y-4 text-blue-100 text-sm">
+                        <li><i class="fa-solid fa-phone mr-2"></i> 787-789-1234</li>
+                        <li><i class="fa-solid fa-envelope mr-2"></i> info@psmpr.com</li>
+                        <li><i class="fa-solid fa-location-dot mr-2"></i> San Juan, Puerto Rico</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Síguenos</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-2xl hover:text-green-400 transition"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-green-400 transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-green-400 transition"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 pt-8 text-center text-sm text-blue-200">
+                <p>&copy; 2024 Plan de Salud Menonita. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
